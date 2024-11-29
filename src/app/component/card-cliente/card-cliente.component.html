@@ -1,0 +1,20 @@
+<div class="card-cliente">
+    <span class="span-dni">
+        <i class="icon fas fa-id-card"></i> <!-- Icono de DNI -->
+        DNI: {{cliente.dni}}
+    </span>
+    <span class="span-datos">
+        <i class="icon fas fa-user"></i> <!-- Icono de usuario -->
+        Datos: {{cliente.nombres}} {{cliente.apellidos}}
+    </span>
+    <span class="span-contacto">
+        <i class="icon fas fa-phone-alt"></i> <!-- Icono de teléfono -->
+        Contacto: {{cliente.numTel}}
+    </span>
+    <a [routerLink]="'/cliente'" [queryParams]="{ id: cliente.id }">
+        Editar
+    </a>
+    <button (click)="eliminar(cliente.id)">
+        Eliminar
+    </button>
+</div>

@@ -1,0 +1,7 @@
+<div class="m-2">
+    <hr>
+    <app-filtros></app-filtros>
+    @for(opcion of opciones;  track opcion.id){
+        <app-opcion [opcion1]="opcion"></app-opcion>
+    }
+</div>

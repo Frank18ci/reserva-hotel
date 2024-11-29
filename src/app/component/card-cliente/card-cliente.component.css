@@ -1,0 +1,48 @@
+.card-cliente {
+    background-color: rgb(101, 63, 253); /* Color de fondo más suave */
+    color: #fff; /* Cambiar color del texto a blanco para mejorar contraste */
+    border-radius: 1rem;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Sombra más suave */
+    padding: 1.5rem;
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem; /* Mayor espacio entre los elementos */
+    max-width: 350px; /* Limitar el ancho de la tarjeta */
+    font-family: 'Arial', sans-serif; /* Tipografía más legible */
+    transition: transform 0.3s ease-in-out; /* Animación al pasar el mouse */
+}
+
+.card-cliente:hover {
+    transform: translateY(-5px); /* Eleva la tarjeta al pasar el mouse */
+}
+
+.span-dni,
+.span-datos,
+.span-contacto {
+    display: flex;
+    font-size: 1rem;
+    font-weight: 500;
+    text-align: left;
+}
+
+.span-dni {
+    color: #FFD700; /* Resaltar el DNI con un color dorado */
+}
+
+.span-datos {
+    font-weight: 600; /* Hacer los datos del cliente un poco más destacados */
+}
+
+.span-contacto {
+    font-style: italic; /* Resaltar el contacto con estilo en cursiva */
+}
+
+.card-cliente .icon {
+    margin-right: 0.5rem; /* Espacio entre el icono y el texto */
+    color: #fff; /* Iconos blancos para contraste */
+}
+
+.card-cliente .icon:hover {
+    color: #FFD700; /* Iconos dorados cuando se pasa el mouse */
+}

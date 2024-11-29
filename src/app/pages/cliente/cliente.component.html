@@ -1,0 +1,13 @@
+<div class="border-pages-clientes">
+    <div class="m-1">
+        <h1>Clientes</h1>
+    </div>
+    <div class="m-1">
+        <a class="agregar-cliente" routerLink="/cliente">Agregar</a>
+    </div>
+    <div class="div-card-clientes m-1">
+        @for (cliente of clientes; track cliente.id) {
+            <app-card-cliente [cliente]="cliente"></app-card-cliente>
+        }
+    </div>
+</div>

@@ -1,0 +1,101 @@
+/* Contenedor general */
+.marco-cliente {
+    margin: 2rem auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    max-width: 1200px;
+    box-sizing: border-box;
+}
+
+/* Caja principal */
+.caja-cliente {
+    background-color: rgb(245, 245, 245); /* Color más claro para mayor contraste */
+    border-radius: 20px;
+    padding: 2rem;
+    width: 90%;
+    max-width: 500px; /* Ajuste máximo en pantallas grandes */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    box-sizing: border-box;
+}
+
+/* Título */
+.caja-cliente h1 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    color: rgb(36, 124, 36); /* Mismo color que el botón */
+    font-size: 1.5rem;
+}
+
+/* Estilo de los campos */
+.box-campo {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-bottom: 1.2rem;
+}
+
+input {
+    border: 1px solid rgba(128, 128, 128, 0.6);
+    outline: none;
+    padding: 0.5rem;
+    border-radius: 0.4rem;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    transition: border-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+/* Efecto focus */
+input:focus {
+    border-color: rgb(36, 124, 36);
+    box-shadow: 0px 0px 4px rgba(36, 124, 36, 0.5);
+}
+
+/* Botón contenedor */
+.box-btn-registrar {
+    width: 100%;
+    text-align: center;
+    margin-top: 1.5rem;
+}
+
+/* Botón */
+.btn-registrar {
+    padding: 0.75rem 1.5rem;
+    background-color: rgb(36, 124, 36);
+    border: none;
+    cursor: pointer;
+    border-radius: 0.5rem;
+    color: white;
+    font-weight: 700;
+    font-size: 1rem;
+    transition: background-color 0.3s ease-in-out, transform 0.2s ease-in-out;
+}
+
+/* Efecto hover del botón */
+.btn-registrar:hover {
+    background-color: rgb(28, 100, 28);
+    transform: scale(1.05);
+}
+
+/* Efecto activo del botón */
+.btn-registrar:active {
+    transform: scale(0.98);
+}
+
+/* Adaptabilidad para dispositivos móviles */
+@media (max-width: 768px) {
+    .caja-cliente {
+        padding: 1.5rem;
+        width: 95%;
+    }
+
+    .btn-registrar {
+        font-size: 0.9rem;
+        padding: 0.6rem 1.2rem;
+    }
+
+    .caja-cliente h1 {
+        font-size: 1.25rem;
+    }
+}

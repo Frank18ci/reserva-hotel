@@ -1,0 +1,23 @@
+.border-pages-clientes{
+    margin: 1rem;
+}
+.m-1{
+    margin: 1rem;
+}
+.div-card-clientes{
+    display: flex;
+}
+.agregar-cliente{
+    text-decoration: none;
+    background-color: rgb(32, 48, 92, 0.8);
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    color: white;
+    font-weight: bold;
+    font-size: 1.2rem;
+    transition: transform 1s ease-in-out;
+}
+.agregar-cliente:hover{
+    background-color: rgb(32, 48, 92, 1);
+    transform: translateY(-5px);
+}

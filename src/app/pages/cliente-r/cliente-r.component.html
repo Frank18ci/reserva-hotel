@@ -1,0 +1,26 @@
+<div class="marco-cliente">
+    <div class="caja-cliente">
+        <h1>Cliente</h1>
+        <form [formGroup]="clienteFormulario" (ngSubmit)="sumitForm()">
+            <div class="box-campo">
+                <label>DNI</label>
+                <input type="text" formControlName="dni" class="dni">
+            </div>
+            <div class="box-campo">
+                <label>Nombres</label>
+                <input type="text" formControlName="nombres" class="nombres">
+            </div>
+            <div class="box-campo">
+                <label>Apellidos</label>
+                <input type="text" formControlName="apellidos" class="apellidos">
+            </div>
+            <div class="box-campo">
+                <label>Numero de Telefono</label>
+                <input type="text" formControlName="numeroTelefono" class="numeroTelefono">
+            </div>
+            <div class="box-btn-registrar">
+                <button [disabled]="!clienteFormulario.valid" [class]="clienteFormulario.valid ? 'btn-registrar': 'btn-registrar-disabled'" >Registrar</button>
+            </div>
+        </form>
+    </div>
+</div>
