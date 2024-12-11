@@ -1,21 +1,111 @@
 <nav>
     <div class="hover-scale">
-        <a href="" class="text-white fw-bold">Hoteles Premiun</a>
+        <a href="" class="text-dark fw-bold">
+            <img class="br-1" width="50px" src="assets/images/logo.webp" /></a>
     </div>
     <div>
-        <div>
-            <button>Estadias</button>
-            <a routerLink="/Expeciencias">Experiencias</a>
+        <div class="d-flex gap-3">
+            <a routerLink="/Expeciencias" class="text-bold text-dark">Alojamientos</a>
+            <a routerLink="/Expeciencias" class=" text-gray">Experiencias</a>
         </div>
     </div>
     <div>
         <ul>
             <li>
-                <a routerLink="/">Home</a>
+                <a routerLink="/Clientes">Pon tu casa</a>
             </li>
             <li>
-                <a routerLink="/clientes">Clientes</a>
+                <a routerLink="/"><i class="fa-solid fa-globe"></i></a>
+            </li>
+            <li>
+                <div class="position-relative">
+                    <button  (click)="changeDropMenu()" class="icon-user btn-dropdown">
+                        <i class="fa-solid fa-bars"></i>
+                        <i class="fa-solid fa-user icono-user"></i>
+                    </button>
+                    <ul [class]="DropMenu ? 'dropdown-menu d-flex': 'dropdown-menu-none'">
+                        <li><button (click)="changeModalL()">Regístrate</button></li>
+                        <li><button (click)="changeModalL()">Iniciar Sesión</button></li>
+                        <hr>
+                        <li><a routerLink="/host/homes">Tarjetas regalo</a></li>
+                        <li><a routerLink="/host/homes">Pon tu casa en Buoking</a></li>
+                        <li><a href="">Centro de ayuda</a></li>
+                    </ul>
+                </div>
             </li>
         </ul>
     </div>
 </nav>
+<div [class]="ModalStatus ? 'modal' : 'modal-off'" tabindex="-1">
+    <div class="modal-register-login">
+        <div class="modal-header">
+            <div>
+                <button (click)="changeModalL()">
+                    <i>X</i>
+                </button>
+            </div>
+            <h2>Inicia sesión o regístrate</h2>
+        </div>
+        <div class="modal-content">
+            <h3>¡Te damos la bienvenida a Buoking!</h3>
+            <div class="container-form">
+                <form>
+                    <div class="container-fields">
+                        <div class="container-field container-especial-field">
+                            <label>País o región</label>
+                            <select>
+                                @for(pais of listaPaises; track pais.name){
+                                   <option >
+                                        {{pais.name}}(+{{pais.callingCodes[0]}})
+                                   </option>     
+                                }
+                            </select>
+                            
+                        </div>
+                        <div class="container-field">
+                            <input type="number" name="" id="" placeholder="Número de télefono">
+                        </div>
+                    </div>
+                    <span class="opciones">
+                        Te llamaremos o enviaremos un SMS para confirmar tu número. Se aplican las tarifas estándar de mensajes y datos.
+                        <a href="">Política de Privacidad</a>
+                    </span>
+                    <div class="container-btn-sumit">
+                        <button type="submit">Continúa</button>
+                    </div>
+                </form>
+            </div>
+            <div class="divisior-o">
+                <div class="o">
+                    o
+                </div>
+            </div>
+            <div class="opciones-other">
+                <div>
+                    <button>
+                        <i class="fa-brands fa-google"></i>
+                        <span>Continúa con Google</span>
+                    </button>
+                </div>
+                <div>
+                    <button>
+                        <i class="fa-brands fa-apple"></i>
+                        <span>Continúa con Apple</span>
+                    </button>
+                </div>
+                <div>
+                    <button>
+                        <i class="fa-solid fa-envelope"></i>
+                        <span>Continúa con el correo electrónico</span>
+                    </button>
+                </div>
+                <div>
+                    <button>
+                        <i class="fa-brands fa-facebook"></i>
+                        <span>Continúa con Facebook</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

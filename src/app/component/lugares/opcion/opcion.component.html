@@ -1,2 +1,31 @@
-<p>opcion works!</p>
-{{opcion1.id}}
+<a href="" class="box-option">
+    <div class="box-img-option">
+        @for (img of opcion1.imagenes; track img) {
+            <img [src]="img | pipeUbicacionImages" alt="Imagen">
+            <button class="btn-img-option"><i class="fa-solid fa-angle-right"></i></button>
+        }        
+    </div>
+    <div class="box-content-option d-flex flex-dc">
+        <div class="d-flex justify-content-between">
+            <span>
+                {{opcion1.ubicacion}}
+            </span>
+            <span class="starts-option">
+                <i class="fa-solid fa-star"></i>
+                {{opcion1.puntaje}}
+            </span>
+        </div>
+        <div class="text-gray">
+            {{opcion1.anfitrion}}
+        </div>
+        <div class="text-gray">
+            {{opcion1.fecha}}
+        </div>
+        <div class="text-bold">
+            {{ opcion1.precio | currency:'USD':'symbol' }}
+            <span class="text-w-400">
+                noche
+            </span>
+        </div>
+    </div>
+</a>

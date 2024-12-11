@@ -267,7 +267,7 @@ body{
 }
 
 .d-flex{
-    display: flex;
+    display: flex !important;
 }
 .justify-content-center{
     justify-content: center;
@@ -418,4 +418,132 @@ button:hover{
 .my-2{
   margin-top: 2rem;
   margin-bottom: 2rem;
+}
+
+.justify-content-between{
+  justify-content: space-between;
+}
+
+.text-bold{
+  font-weight: bold;
+}
+.text-w-400{
+  font-weight: 400;
+}
+.box-option{
+  text-decoration: none;
+  color: black;
+}
+.position-relative{
+  position: relative;
+}
+.text-dark{
+  color: #000;
+}
+.dropdown-menu-none{
+  display: none !important;
+}
+.dropdown-menu{  
+  gap: 0 !important;
+  top: 100%;
+  right: 16%;
+  position: absolute;
+  align-items: flex-start !important;
+  flex-direction: column;
+  border-radius: 15px;
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.66);
+  z-index: 100;
+  width: 13rem;
+  background-color: white;
+  display: flex !important;
+}
+.btn-dropdown{
+  position: relative;
+}
+.dropdown-menu li{
+  width: 100%;
+  height: 100%;
+}
+.dropdown-menu li button, .dropdown-menu li a{
+  color: rgb(88, 88, 88) !important;
+  text-align: left;
+  border: none;
+  margin: 0;
+  padding: 0;
+  font-weight: 500 !important;
+  letter-spacing: 0 !important;
+  display: block;
+  padding: 0.6rem 0.5rem;
+  width: 100%;
+  height: 100%;
+}
+.dropdown-menu li button:hover, .dropdown-menu li a:hover{
+  background-color: rgb(219, 219, 219);
+}
+.dropdown-menu hr{
+  width: 100%;
+  height: 1px;
+  background-color: gray;
+}
+
+
+.modal{
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.modal-register-login{
+  transform: translateY(-20%);
+  position: relative;
+  z-index: 10;
+  border-radius: 15px;
+  background-color: #fff;
+  max-width: 30rem;
+  box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.66);
+}
+.modal-header{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 1px solid gray;
+}
+
+.modal-content{
+  padding: 10px;
+}
+
+.justify-content-around{
+  justify-content: space-around;
+}
+.px-1{
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+.px-2{
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+.px-3{
+  padding-left: 3rem;
+  padding-right: 3rem;
+}
+.px-4{
+  padding-left: 4rem;
+  padding-right: 4rem;
+}
+.px-5{
+  padding-left: 5rem;
+  padding-right: 5rem;
+}
+.py-1{
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+.p-fixed{
+  position: fixed;
 }

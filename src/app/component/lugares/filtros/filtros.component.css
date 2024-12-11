@@ -45,11 +45,23 @@
     font-size: 1rem;
     border-radius: 0;
     padding-bottom: 0.1rem;
+    position: relative;
 }
 .btn-opcion-cambio i{
     font-size: 1.1rem;
 }
-.btn-opcion-cambio:hover{
-    border-bottom: 2px solid gray;
-    color: gray;
+.btn-opcion-cambio::after {
+    content: "";
+    bottom: 0;
+    left: 50%;
+    height: 2px;
+    transform: translateX(-50%);
+    background-color: gray;
+    display: block; 
+    position: absolute;
+    border-radius: 50%;
+    transition: width 0.3s ease;
+}
+.btn-opcion-cambio:hover::after {
+    width: 80%;
 }

@@ -1,0 +1,17 @@
+.btn-buoking-start{
+    padding: .8rem 1.5rem;
+    background-color: #b43a3a;
+    border-radius: 15px;
+    color: #fff;
+}
+.container-buoking-start{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 1rem;
+    font-weight: 700;
+}
+nav{
+    width: 100%;
+    background-color: white;
+}

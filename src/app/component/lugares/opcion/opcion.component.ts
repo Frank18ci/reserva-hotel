@@ -1,10 +1,12 @@
 import { Component, Input } from '@angular/core';
 import { Opcion } from '../opciones/models/Opcion';
+import { CommonModule } from '@angular/common';
+import { PipeUbicacionImagesPipe } from '../opciones/pipes/pipe-ubicacion-images.pipe';
 
 @Component({
   selector: 'app-opcion',
   standalone: true,
-  imports: [],
+  imports: [CommonModule, PipeUbicacionImagesPipe],
   templateUrl: './opcion.component.html',
   styleUrl: './opcion.component.css'
 })

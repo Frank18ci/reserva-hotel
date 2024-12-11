@@ -3,6 +3,7 @@ import { HomeComponent } from './pages/home/home.component';
 import { ClienteComponent } from './pages/cliente/cliente.component';
 import { ClienteRComponent } from './pages/cliente-r/cliente-r.component';
 import { OpcionesComponent } from './component/lugares/opciones/opciones.component';
+import { HomesComponent } from './pages/host/homes/homes.component';
 
 export const routes: Routes = [
     {
@@ -20,5 +21,14 @@ export const routes: Routes = [
     {
         path: 'Expeciencias',
         component: OpcionesComponent
+    },
+    {
+        path: 'host',
+        children: [
+            {
+                path: 'homes',
+                component: HomesComponent
+            }
+        ]
     }
 ];

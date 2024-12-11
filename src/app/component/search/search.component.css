@@ -1,11 +1,12 @@
 .box-search{
  border-radius: 7rem;
- padding: 0.5rem;   
+ padding: 0rem 0.2rem;
  box-shadow: 2px 2px 2px 2px gray;
 }
 
 .box-btn-search{
-    
+    position: relative;
+    right: 0;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -23,14 +24,13 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #ffa023;
-    content: '';
+    background-color: #910091;
     border-radius: 50%;
     width: 50px;
     height: 50px;
 }
 .btn-search:hover{
-    background-color: #c57b19;
+    background-color: #5e005e;
 }
 .btn-search i{
     display: flex;
@@ -45,7 +45,7 @@ input{
 .box-efect-hover{
     margin: 0;
     border: 0;
-    border-radius: 7rem;
+    border-radius: 20%;
 }
 .box-efect-hover:hover{
     background-color: rgb(238, 238, 238);
@@ -53,3 +53,26 @@ input{
 .caja-opciones{
     padding: 0;
 }
+
+@media only screen and (max-width: 600px) {
+    .none-sm{
+        display: none;
+    }
+    .box-btn-opciones-search{
+        flex-direction: column !important;
+    }
+  }
+  
+  /* Styles for screens between 600px and 1200px */
+  @media only screen and (min-width: 600px) and (max-width: 1200px) {
+    body {
+      background-color: lightgreen;
+    }
+  }
+  
+  /* Styles for screens larger than 1200px */
+  @media only screen and (min-width: 1200px) {
+    body {
+      background-color: lavender;
+    }
+  }

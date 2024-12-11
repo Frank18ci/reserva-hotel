@@ -1,0 +1,9 @@
+main{
+    padding-top: 9rem;
+}
+.banner-principal{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    gap: 1rem;
+}
