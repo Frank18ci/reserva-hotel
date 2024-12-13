@@ -4,6 +4,193 @@ main{
 .banner-principal{
     display: flex;
     justify-content: center;
-    align-content: center;
+    align-items: center;
     gap: 1rem;
+    flex-wrap: wrap;
+    height: 100%;
+}
+.baner-parte-info{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+}
+.color-principal{
+    color: #b43a3a;
+}
+.titulo{
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+.subtitulo{
+    font-size: 2rem;
+    font-weight: bold;
+}
+.monto-ganancia{
+    font-size: 5rem;
+    font-weight: bold;
+    color: #222222;
+}
+.container-tiempo-ganancia a{
+    text-decoration: underline;
+    font-weight: 600;
+    color: #222222;
+}
+
+.container-range-monto{
+    width: 90%;
+}
+.input-range-monto {
+    width: 100%;
+    border-radius: 8px;
+    appearance: none;
+    cursor: pointer;
+    outline: none;
+    -webkit-tap-highlight-color: transparent;
+    height: 4px;
+    background: linear-gradient(to right, #999, #999 50%); /* barra plomo medio */
+    font-size: 100%;
+    color: #fff;
+    --input_thumbSize: 100002px; /* Tamaño del thumb */
+    --input_background: #999; /* Color de fondo general */
+    --input_backgroundEmptyColor: #fff;
+}
+.container-descubrecomocalculamos a{
+    text-decoration: underline;
+    color: gray;
+}
+.container-c-busqueda-region{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.container-busqueda-region{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.btn-busqueda-region{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    border: 1px solid rgb(170, 170, 170);
+    border-radius: 25px;
+    flex-wrap: wrap;
+    padding: 0.4rem;
+}
+.container-icono-busqueda {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%; 
+    flex-wrap: wrap; 
+    margin-right: 2rem;
+}
+
+.container-icono-busqueda i {
+        display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%; 
+    flex-wrap: wrap; 
+    font-size: 24px; 
+    line-height: 1; 
+    color: #333;
+}
+
+.container-detalles-busqueda{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    font-weight: 500;
+}
+.container-detalles-completos-busqueda{
+    display: flex;
+    flex-direction: row;
+    color: gray;
+    font-weight: normal;
+}
+
+.titulo-dark{
+    text-align: center;
+    font-weight: 800;
+    color: #222222;
+}
+
+.container-portada{
+    width: 100%;
+}
+.container-portada picture{
+    width: 100%;
+}
+.container-portada picture img{
+    width: 100%;
+}
+.container-caracteristicas{
+    display: grid;
+    gap: 1rem;
+    width: 100%; 
+    grid-template-columns: repeat(3, minmax(300px, 1fr));
+}
+.container-caracteristica p{
+    color: gray;
+}
+.container-imagen-aircover{
+    width: 100%;
+    text-align: center;
+}
+.container-imagen-aircover img{
+    width: 20%;
+}
+
+.container-tabla-beneficios{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+.container-tabla-beneficios table{
+    width: 70%;
+    text-align: center;
+    border-spacing: 0;
+}
+.info-table{
+    text-align: left;
+}
+.tr-estilo th, .tr-estilo td{
+    padding: 1rem;
+    border-bottom: 2px solid #cccccc !important;
+}
+.tr-estilo td i{
+    font-size: 1.2rem;
+}
+
+
+.container-info-adicional-tabla{
+    width: 60%;
+    margin: 1rem auto;
+    color: gray;
+}
+.container-info-adicional-tabla a{
+    color: #222222;
+    text-decoration: underline;
+}
+.container-btn-informacion{
+    text-align: center;
+    margin: 2rem;
+}
+.container-btn-informacion a{
+    border-radius: 10px;
+    border: 1px solid #222222;
+    padding: 0.8rem 1rem;
+    color: #222222;
+    font-weight: 700;
+}
+.container-btn-informacion a:hover{
+    background-color: #d8d8d8;
 }
