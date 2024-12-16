@@ -194,3 +194,171 @@ main{
 .container-btn-informacion a:hover{
     background-color: #d8d8d8;
 }
+.session-dudas{
+    width: 100%;
+    background-color: #f3f3f3;
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.session-dudas h1{
+    font-size: 2.5rem;
+    width: 50%;
+}
+.session-dudas-titulo{
+    width: 50%;
+}
+.session-dudas-contenido{
+    width: 50%;
+}
+.bt-1-gray{
+    border-bottom: 1px solid rgb(207, 206, 206);
+}
+
+.acordion-body a{
+    color: black;
+    text-decoration: underline;
+}
+.section-container-dudas-extra{
+    width: 100%;
+    background-color: #f3f3f3;
+}
+.container-dudas-extra{
+    width: 100%;
+    border-radius: 25px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    background-color: white;
+}
+.container-imagen-dudas-extra{
+    width: 50%;
+}
+.container-imagen-dudas-extra img{
+    width: 100%;
+    border-radius: 25px 0px 0px 25px;
+}
+.container-contenido-dudas-extra h1{
+    font-size: 1.7rem;
+}
+.container-contenido-dudas-extra p{
+    color: #999;
+    font-size: 1.4rem;
+}
+.container-contenido-dudas-extra button{
+    font-weight: 600;
+}
+.container-contenido-dudas-extra button:hover{
+    background-color: rgb(214, 214, 214);
+}
+.bb-1-gray{
+    border-bottom: 1px solid #999;
+}
+.container-opciones-menu-paginas{
+    display: flex;
+    justify-items: center;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.container-opciones-menu-paginas a{
+    display: block;
+    color: #222222;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+.container-opciones-menu-paginas a:hover{
+    text-decoration: underline;
+}
+.nav-host-homes{
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.nav-part-copy{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.nav-part-copy a{
+       color: #222222;
+}
+.punto{
+    margin: .4rem;
+    width: 2px;
+    height: 2px;
+    border-radius: 50%;
+    background-color: #222222;
+}
+.nav-part-copy a:hover{
+    text-decoration: underline;
+}
+
+.nav-part-configuration-redes{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.nav-part-configuration-redes button{
+    border: 0;
+    display: flex;
+    gap: 0.2rem;
+}
+.nav-part-configuration-redes button:hover{
+    text-decoration: underline;
+}
+.nav-part-configuration-redes a{
+    color: #222222;
+}
+.nav-part-redes{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: .5rem;
+    font-size: 1.5rem;
+}
+
+
+@media screen and (max-width: 600px) {
+    
+}
+
+/* Pantallas medianas (tabletas) */
+@media screen and (min-width: 601px) and (max-width: 1024px) {
+    .container-contenido-dudas-extra img{
+        height: 150%;
+    }
+    .container-contenido-dudas-extra p {
+        font-size: 1rem;
+    }
+
+    .nav-host-homes{
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+
+    }
+    .nav-part-copy{
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .nav-part-configuration-redes{
+        
+        justify-content: center;
+    }
+    .punto-1{
+        display: none;
+    }
+    .span-copy{
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+}
+
+/* Pantallas grandes (computadoras) */
+@media screen and (min-width: 1025px) {
+    
+}
